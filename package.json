@@ -1,0 +1,49 @@
+{
+  "name": "unghost",
+  "version": "1.0.0",
+  "description": "Zero-dependency scanner and sanitizer for invisible zero-width characters and Trojan Source Unicode attacks",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "unghost": "./bin/unghost.js"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xxnetme/unghost.git"
+  },
+  "keywords": [
+    "security",
+    "trojan-source",
+    "zero-width",
+    "unicode",
+    "sanitizer",
+    "linter",
+    "cli",
+    "devtools",
+    "cve-2021-42574"
+  ],
+  "author": "xxnetme",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xxnetme/unghost/issues"
+  },
+  "homepage": "https://github.com/xxnetme/unghost#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^5.9.3"
+  }
+}
